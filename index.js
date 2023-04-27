@@ -9,20 +9,20 @@ const port = 3000;
 const saltRounds = 10;
 const jwtSecret = "secretkey";
 
-const db = mysql.createConnection({
-  host: "127.0.0.1",
-  user: "root",
-  password: "yash",
-  database: "parc",
-});
+// const db = mysql.createConnection({
+//   host: "127.0.0.1",
+//   user: "root",
+//   password: "yash",
+//   database: "parc",
+// });
 
-db.connect((err) => {
-  if (err) {
-    console.log("Failed to connect to MySQL database");
-    throw err;
-  }
-  console.log("Connected to MySQL database");
-});
+// db.connect((err) => {
+//   if (err) {
+//     console.log("Failed to connect to MySQL database");
+//     throw err;
+//   }
+//   console.log("Connected to MySQL database");
+// });
 
 app.use(bodyParser.json());
 
