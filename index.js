@@ -142,6 +142,6 @@ app.post("/hardware/sensor-data", (req, res) => {
     .json({ data: req.body, msg: "data transfer successull" });
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Server listening on port ${port}`);
 });
